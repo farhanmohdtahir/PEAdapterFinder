@@ -7,7 +7,7 @@ PEAdapterFinder is stand for Paired-End Adapter Finder. PEAdapterFinder is capab
 - Date  
     - Jan 2017  
     
-# Install PEAdapterFinder (Version 1: If git not installed in system)
+# Install PEAdapterFinder (Version 1: If git is not installed in system)
 1. Download source code from github: https://github.com/farhanmohdtahir/PEAdapterFinder.git (downloaded file will be named as PEAdapterFinder-master.zip)  
 2. Open terminal  
 3. Go to Downloads directory (or directory which the PEAdapterFinder-master.zip are located)  
@@ -31,7 +31,7 @@ PEAdapterFinder is stand for Paired-End Adapter Finder. PEAdapterFinder is capab
 
 7. Installation complete. You can run PEAdapterFinder as the following tutorial.  
 
-#Install PEAdapterFinder (Version 2: If git already installed in system)
+# Install PEAdapterFinder (Version 2: If git is installed in system)
 1. Open Terminal  
 2. Cloning the source code from github by writing the following command:  
    
