@@ -7,7 +7,7 @@ PEAdapterFinder is stand for Paired-End Adapter Finder. PEAdapterFinder is capab
 - Date  
     - Jan 2017  
     
-# Install PEAdapterFinder (Version 1: If git not installed in system)
+# Install PEAdapterFinder (Version 1: If git is not installed in system)
 1. Download source code from github: https://github.com/farhanmohdtahir/PEAdapterFinder.git (downloaded file will be named as PEAdapterFinder-master.zip)  
 2. Open terminal  
 3. Go to Downloads directory (or directory which the PEAdapterFinder-master.zip are located)  
@@ -31,7 +31,7 @@ PEAdapterFinder is stand for Paired-End Adapter Finder. PEAdapterFinder is capab
 
 7. Installation complete. You can run PEAdapterFinder as the following tutorial.  
 
-#Install PEAdapterFinder (Version 2: If git already installed in system)
+# Install PEAdapterFinder (Version 2: If git is installed in system)
 1. Open Terminal  
 2. Cloning the source code from github by writing the following command:  
    
@@ -68,12 +68,36 @@ ___Make Sure both input FASTQ file are present in the same directory as PEAdapte
 
 | Option | Description                                                                                                                                                                                                                   | Flag         |
 |--------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------|
-| -f1    | Input File 1. The file must in .fastq OR .fq file format  (multi-line OR 4-line FASTQ file)  Example: __-f1 _sample1.fastq___ OR __-f1 _sample1.fq___                                                                         | __REQUIRED__ |
-| -f2    | Input File 2. The file must in .fastq OR .fq file format  (multi-line OR 4-line FASTQ file).  Example: __-f2 _sample2.fastq___ OR __-f2 _sample2.fq___                                                                        | __REQUIRED__ |
-| -seql  | Minimum length percentage to get adapter sequence  (default = 70, to change use ‘-seql=’) Example: __-seql=80__                                                                                                               | OPTIONAL     |
-| -perc  | Minimum match percentage to get adapter sequence  (default = 85, to change use ‘-perc=’) Example: __-perc=90__                                                                                                                | OPTIONAL     |
-| -conf  | Minimum confidence level of nucleotides (default = 1, to change use ‘-conf=’) Example: __-conf=80__                                                                                                                           | OPTIONAL     |
-| -debug | Debug level of programme (default = 0, to change use ‘-debug=’ : 0 - only adapter sequences, 1 - nucleotide count and phred score, 2 - dynamic programming matrix and traceback matrix) Example: __-debug=1__ OR __-debug=2__ | OPTIONAL     |
+| -f1    | Input File 1. The file must in .fastq OR .fq file format  (multi-line OR 4-line FASTQ file)<br/>  Example: __-f1 _sample1.fastq___ OR __-f1 _sample1.fq___                                                                         | __REQUIRED__ |
+| -f2    | Input File 2. The file must in .fastq OR .fq file format  (multi-line OR 4-line FASTQ file).<br/>  Example: __-f2 _sample2.fastq___ OR __-f2 _sample2.fq___                                                                        | __REQUIRED__ |
+| -seql  | Minimum length percentage to get adapter sequence <br/> _This parameter will set the percentage's limit of length of sequence alignment for both read to determine whether both read contain Adapter Sequence or not._<br/>  (default = 70, to change use ‘-seql=’)<br/> Example: __-seql=80__                                                                                                               | OPTIONAL     |
+| -perc  | Minimum match percentage to get adapter sequence <br/>_This parameter will set the percentage's limit of match bases between sequence alignment in read 1 and read 2 to determine whether both read contain Adapter Sequence or not._<br/> (default = 85, to change use ‘-perc=’)<br/> Example: __-perc=90__                                                                                                                | OPTIONAL     |
+| -conf  | Minimum confidence level of nucleotides<br/>_This parameter will set the limit of biggest phred score for each bases in the adapter sequence that allowed in order to determine the confidence level of Adapter Sequence_<br/> (default = 1, to change use ‘-conf=’)<br/> Example: __-conf=8__                                                                                                                           | OPTIONAL     |
+| -debug | Debug level of programme (default = 0, to change use ‘-debug=’ : 0 - only adapter sequences, 1 - nucleotide count and phred score, 2 - dynamic programming matrix and traceback matrix)<br/> Example: __-debug=1__ OR __-debug=2__ | OPTIONAL     |
 | --help | To view information about option that can be used                                                                                                                                                                             | OPTIONAL     |
 
 5.Wait for the program to complete it's process for the result of adapter sequence found in both file. 
+
+# Set the PEAdapterFinder program in your linux environment [OPTIONAL]
+Rather than you need to go to path of PEAdapterFinder program for each time you want to run the program, You may export it into your linux environment. So that, you can run the PEAdapterFinder program in any directory instead of go to the program's directory first. To do so, you can write the command: 
+
+      export PATH=$PATH:<PEAdapterFinder program's directory>
+
+# OR
+
+You can copy the PEAdapterFinder Program from the directory and paste it into the path that already set into your linux environment. To view paths that already set in your linux environment, you can write the command: 
+
+      echo "$PATH"
+      
+This command will display all path that had been set in your linux environment. Example output: 
+
+      /usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games
+      
+So you can paste it in _/usr/local/bin_ OR _/usr/bin_ OR _/usr/local/games_ OR _/usr/games_
+
+# Run PEAdapterFinder After Set the Path in Linux Environment
+
+If you had set the path of PEAdapterFinder program into your linux environment, you can run it in any directory you wish(you may run it in your sample file's directory). But, to write the command to run the program, you doesn't need to write "./" command. See the example command below:
+
+      PEAdapterFinder -f1 sample1.fastq -f2 sample2.fastq
+      
