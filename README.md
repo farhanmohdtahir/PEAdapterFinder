@@ -25,7 +25,7 @@ PEAdapterFinder is stand for Paired-End Adapter Finder. PEAdapterFinder is capab
 
         cd /export/home/farhan/Downloads/PEAdapterFinder-master  
 
-6. Compile the PEAdapterFinder program by writing the following commands (This will create executable PEAdapterFinder program in the directory):  
+6. Compile the source code by writing the following commands (This will create executable PEAdapterFinder program in the directory):  
     
         make  
 
@@ -42,7 +42,7 @@ PEAdapterFinder is stand for Paired-End Adapter Finder. PEAdapterFinder is capab
 
         cd PEAdapterFinder
 
-4. Compile the PEAdapterFinder program by writing the following commands (This will create executable PEAdapterFinder program in the directory):  
+4. Compile the source code by writing the following commands (This will create executable PEAdapterFinder program in the directory):  
    
         make  
 
