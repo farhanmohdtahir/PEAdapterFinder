@@ -25,7 +25,7 @@ PEAdapterFinder is stand for Paired-End Adapter Finder. PEAdapterFinder is capab
 
         cd /export/home/farhan/Downloads/PEAdapterFinder-master  
 
-6. MAKE the PEAdapterFinder program by writing the following commands (This will create executable PEAdapterFinder program in the directory):  
+6. Compile the PEAdapterFinder program by writing the following commands (This will create executable PEAdapterFinder program in the directory):  
     
         make  
 
@@ -42,7 +42,7 @@ PEAdapterFinder is stand for Paired-End Adapter Finder. PEAdapterFinder is capab
 
         cd PEAdapterFinder
 
-4. MAKE the PEAdapterFinder program by writing the following commands (This will create executable PEAdapterFinder program in the directory):  
+4. Compile the PEAdapterFinder program by writing the following commands (This will create executable PEAdapterFinder program in the directory):  
    
         make  
 
@@ -97,7 +97,7 @@ So you can paste it in _/usr/local/bin_ OR _/usr/bin_ OR _/usr/local/games_ OR _
 
 # Run PEAdapterFinder After Set the Path in Linux Environment
 
-If you had set the path of PEAdapterFinder program into your linux environment, you can run it in any directory you wish(you may run it in your sample file's directory). But, to write the command to run the program, you doesn't need to write "./" command. See the example command below:
+If you had set the path of PEAdapterFinder program into your linux environment, you can run it in any directory you wish(you may run it in your sample file's directory). But, in order to run the program, you doesn't need to write "./" command. See the example command below:
 
       PEAdapterFinder -f1 sample1.fastq -f2 sample2.fastq
       
