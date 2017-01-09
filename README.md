@@ -77,3 +77,27 @@ ___Make Sure both input FASTQ file are present in the same directory as PEAdapte
 | --help | To view information about option that can be used                                                                                                                                                                             | OPTIONAL     |
 
 5.Wait for the program to complete it's process for the result of adapter sequence found in both file. 
+
+# Set the PEAdapterFinder program in your linux environment [OPTIONAL]
+Rather than you need to go to path of PEAdapterFinder program for each time you want to run the program, You may export it into your linux environment. So that, you can run the PEAdapterFinder program in any directory instead of go to the program's directory first. To do so, you can write the command: 
+
+      export PATH=$PATH:<PEAdapterFinder program's directory>
+
+# OR
+
+You can copy the PEAdapterFinder Program from the directory and paste it into the path that already set into your linux environment. To view paths that already set in your linux environment, you can write the command: 
+
+      echo "$PATH"
+      
+This command will display all path that had been set in your linux environment. Example output: 
+
+      /usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games
+      
+So you can paste it in _/usr/local/bin_ OR _/usr/bin_ OR _/usr/local/games_ OR _/usr/games_
+
+# Run PEAdapterFinder After Set the Path in Linux Environment
+
+If you had set the path of PEAdapterFinder program into your linux environment, you can run it in any directory you wish(you may run it in your sample file's directory). But, to write the command to run the program, you doesn't need to write "./" command. See the example command below:
+
+      PEAdapterFinder -f1 sample1.fastq -f2 sample2.fastq
+      
