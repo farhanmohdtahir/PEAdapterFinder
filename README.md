@@ -2,7 +2,7 @@
 # Introduction  
 PEAdapterFinder is stand for Paired-End Adapter Finder. PEAdapterFinder is capable to  identify two consensus adapter sequences from two paired-end FASTQ file as input. Both FASTQ file can be in multi-line FASTQ file or 4-line FASTQ file.  
 
-- Author  
+- Developer  
     - Rayan Gan and Farhan Tahir 
 - Date  
     - Jan 2017  
@@ -83,7 +83,7 @@ Rather than you need to go to path of PEAdapterFinder program for each time you 
 
       export PATH=$PATH:<PEAdapterFinder program's directory>
 
-# OR
+## OR
 
 You can copy the PEAdapterFinder Program from the directory and paste it into the path that already set into your linux environment. To view paths that already set in your linux environment, you can write the command: 
 
