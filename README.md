@@ -2,7 +2,7 @@
 # Introduction  
 PEAdapterFinder is stand for Paired-End Adapter Finder. PEAdapterFinder is capable to  identify two consensus adapter sequences from two paired-end FASTQ file as input. Both FASTQ file can be in multi-line FASTQ file or 4-line FASTQ file.  
 
-- Author  
+- Developer  
     - Rayan Gan and Farhan Tahir 
 - Date  
     - Jan 2017  
