@@ -83,7 +83,7 @@ Rather than you need to go to path of PEAdapterFinder program for each time you 
 
       export PATH=$PATH:<PEAdapterFinder program's directory>
 
-# OR
+## OR
 
 You can copy the PEAdapterFinder Program from the directory and paste it into the path that already set into your linux environment. To view paths that already set in your linux environment, you can write the command: 
 
